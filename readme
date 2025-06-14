@@ -1,3 +1,5 @@
 Провели отладку, исправили ошибки, рефакторили код для лучшей читаемости, удалили лишние переменные и функции, оптимизировали алгоритмы — итогом стал более чистый, быстрый и удобный для поддержки проект.
 \copy employees from 'C:\Users\Admin\Desktop\agents_import.csv' with (format csv, header, delimiter ';');
-cd "C:\Program Files\PostgreSQL\15\bin\pg_dump" -U postgres -F c -f "C:\Users\Admin\Desktop\backup_ice_cream.dmp" ice_cream 
+
+psql -U postgres grocery_store < "C:\Users\Admin\Desktop\ВИРУСЫ 2 сезон\bd.dmp" -- для восстановлении
+cd "C:\Program Files\PostgreSQL\15\bin\pg_dump" -U postgres -F c -f "C:\Users\Admin\Desktop\backup_ice_cream.dmp" ice_cream -- для копии
